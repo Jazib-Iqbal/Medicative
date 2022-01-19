@@ -75,7 +75,12 @@ $theme_green: #1CBAA0;
             button{
                 padding: 1rem .5rem;
                 border: none;
-                background-color: green;
+                background-color: transparent;
+
+                i{
+                    color: #777777;
+                    font-size: .8rem;
+                }
             }
                 
         }
@@ -104,5 +109,69 @@ $theme_green: #1CBAA0;
 }
 
 
+.logo_wrap-inner{
+    display: flex;
+    justify-content: space-between;
+}
 
+.logo_wrap-inner aside{
+    display: flex;
+
+    .company_name{
+
+        h2{
+            font-size: 1.7rem;
+        }
+        // p{
+        //     width: 3.5rem;
+        // }
+    }
+}
+
+
+.logo_wrap-inner img{
+    width: 3rem;
+    margin-right: .5rem;
+}
+
+@media(max-width: 850px){
+    .nav_a-inner aside span{
+        display: none;
+    }
+}
+
+@media(max-width: 620px){
+    .nav_a-inner{
+        justify-content: center;
+    }
+
+    .nav_a-inner aside{
+        flex: 100%;
+        max-width: 100%;
+        justify-content: center;
+    }
+    .nav_a-inner ul{
+        flex: 100%;
+        max-width: 100%;
+        justify-content: center;
+
+        li:nth-child(6) {
+            padding-right: 0;
+            border-right: transparent;
+
+            
+            
+        }
+
+        li:nth-child(7) {
+            
+            input{
+                width: 5rem;
+                margin-left: 0;
+            }
+            
+        }
+
+    }
+}
 
